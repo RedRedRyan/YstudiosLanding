@@ -9,12 +9,9 @@ import "swiper/css/effect-fade";
 import { useNavigate } from "react-router-dom";
 
 // Import media
-import imglight from "/lightLogo.jpeg";
-import imgdark from "/dark.jpeg";
 import teamImage1 from "/Jude.jpg";
-import teamImage2 from "/Jude.jpg";
-import teamImage3 from "/Jude.jpg";
-import vid from "/ParkingLot.mp4";
+import teamImage2 from "/Ryan.jpg";
+import teamImage3 from "/Costo.jpg";
 
 const Home = (): JSX.Element => {
   let navigate = useNavigate();
@@ -63,8 +60,8 @@ const Home = (): JSX.Element => {
 
         <div className="relative w-full lg:w-3/5 h-64 md:h-[60vh] rounded-3xl overflow-hidden shadow-lg mt-8 lg:mt-0">
           <video autoPlay loop muted className="w-full h-full object-cover">
-            <source src={vid} type="video/mp4" />
             Your browser does not support the video tag.
+            <source src="https://i.imgur.com/vF3PSMJ.mp4" type="video/mp4" />
           </video>
           <div className="absolute bottom-4 left-4 bg-black bg-opacity-75 p-4 rounded-md">
             <h3 className="text-xl font-bold">Rave Race</h3>
@@ -103,7 +100,7 @@ const Home = (): JSX.Element => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2 }}
-            className="w-full md:w-1/2 flex justify-center"
+            className="w-full md:w-1/2 flex justify-center w-80 h-[300]"
           >
             <Swiper
               modules={[Navigation, Autoplay, EffectFade]}
@@ -115,12 +112,15 @@ const Home = (): JSX.Element => {
             >
               <SwiperSlide>
                 <img src={teamImage1} alt="Team 1" className="w-full rounded-lg" />
+               
               </SwiperSlide>
               <SwiperSlide>
                 <img src={teamImage2} alt="Team 2" className="w-full rounded-lg" />
+              
               </SwiperSlide>
               <SwiperSlide>
                 <img src={teamImage3} alt="Team 3" className="w-full rounded-lg" />
+                
               </SwiperSlide>
             </Swiper>
           </motion.div>

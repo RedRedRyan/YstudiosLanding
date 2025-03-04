@@ -2,6 +2,7 @@ import { JSX, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "/lightLogo.jpeg"
+import Contact from "../Modals/Contact";
 const Header = (): JSX.Element => {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
@@ -18,9 +19,7 @@ const Header = (): JSX.Element => {
         <button onClick={() => navigate("/our-work")} className="hover:text-gray-400">Our Work</button>
       </div>
       
-      <button onClick={() => navigate("/signin")} className="hidden md:block bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-lg text-white">
-        Contact Us
-      </button>
+    <Contact/>
 
       {/* Mobile Menu Button */}
       <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -33,7 +32,7 @@ const Header = (): JSX.Element => {
           <button onClick={() => { navigate("/overview"); setIsOpen(false); }} className="hover:text-gray-400">Overview</button>
           <button onClick={() => { navigate("/work"); setIsOpen(false); }} className="hover:text-gray-400">Our Work</button>
           <button onClick={() => { navigate("/contact"); setIsOpen(false); }} className="hover:text-gray-400">Contact</button>
-          <button onClick={() => { navigate("/signin"); setIsOpen(false); }} className="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-lg text-white">Sign In</button>
+          <Contact/>
         </div>
       )}
     </nav>
