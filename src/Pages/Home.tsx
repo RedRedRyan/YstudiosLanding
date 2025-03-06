@@ -1,4 +1,6 @@
 import { JSX, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import Contact from '../components/Modals/Contact'
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -6,7 +8,6 @@ import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { useNavigate } from "react-router-dom";
 
 // Import media
 import teamImage1 from "/Jude.jpg";
@@ -20,14 +21,17 @@ const Home = (): JSX.Element => {
   useEffect(() => {
     const typed = new Typed(typedTextRef.current, {
       strings: [
-        "We are creators.",
-        "We push boundaries.",
-        "We craft unforgettable experiences.",
+        "The",
+        "The only",
+        "The only way",
+        "The only way is",
+        "The only way is up."
+
       ],
-      typeSpeed: 50,
-      backSpeed: 25,
+      typeSpeed: 25,
+      backSpeed: 12,
       backDelay: 1000,
-      loop: false,
+      loop: true,
       showCursor: true,
     });
 
@@ -42,9 +46,9 @@ const Home = (): JSX.Element => {
           <h1 className="text-4xl md:text-6xl font-bold mb-4 md:mb-6">
             Immersive Experiences.<br />Endless Possibilities.
           </h1>
-          <p className="text-lg md:text-xl mb-6">YStudios, This is why.</p>
+          <p className="text-lg md:text-xl mb-6">YStudios,<br/> This is why we build.</p>
           <div className="flex flex-col sm:flex-row items-center sm:space-x-4 space-y-4 sm:space-y-0">
-            <button className="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg text-lg font-semibold w-full sm:w-auto">
+            <button className="bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-lg text-lg font-semibold w-full sm:w-auto" onClick={()=>{navigate('/our-work')}}>
               Explore Now
             </button>
             <button
@@ -74,7 +78,7 @@ const Home = (): JSX.Element => {
       <section className="py-20 px-4 md:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Who We Are</h2>
         <p className="text-lg md:text-xl text-center mb-6">
-          <span ref={typedTextRef} className="text-blue-400 font-semibold"></span>
+          <span ref={typedTextRef} className="text-gold font-semibold font-serif-[Times New Roman]"></span>
         </p>
 
         <div className="flex flex-col md:flex-row items-center justify-center mt-12 space-y-8 md:space-y-0 md:space-x-8">
@@ -125,6 +129,7 @@ const Home = (): JSX.Element => {
             </Swiper>
           </motion.div>
         </div>
+        <Contact/>
       </section>
     </div>
   );

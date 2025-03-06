@@ -38,7 +38,7 @@ const ProjectSection: React.FC<ProjectSectionProps> = ({ title, description, vid
       </div>
       <div className="md:w-1/2 p-4">
         {videoSrc && (
-          <video className="w-full rounded-lg mb-4" controls>
+          <video className="w-full rounded-lg mb-4" autoPlay>
             <source src={videoSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

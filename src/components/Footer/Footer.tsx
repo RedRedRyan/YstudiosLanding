@@ -4,7 +4,7 @@ const Footer = () :JSX.Element=> {
   return (
     <div>
         <footer className="py-6 text-center bg-gray-800">
-        <p>&copy; {new Date().getFullYear()} YStudios. All Rights Reserved.</p>
+        <p className='text-[white]'>&copy; {new Date().getFullYear()} YStudios. All Rights Reserved.</p>
       </footer>
     </div>
   )
