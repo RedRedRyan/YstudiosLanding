@@ -129,7 +129,9 @@ const Home = (): JSX.Element => {
             </Swiper>
           </motion.div>
         </div>
+        <div className=" mt-16 ">
         <Contact/>
+        </div>
       </section>
     </div>
   );

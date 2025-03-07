@@ -16,8 +16,11 @@ const Header = (): JSX.Element => {
       </button>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex space-x-6">
+      <div className="hidden sm:flex space-x-6">
         <button onClick={() => navigate("/our-work")} className="hover:text-gray-400">Our Work</button>
+      </div>
+      <div className="hidden sm:flex space-x-6 text-[white] py-2 bg-[blue] px-2 rounded-full">
+        <button onClick={() => navigate("/Contact Us")} className="hover:text-gray-400">Contact Us</button>
       </div>
 
       {/* Mobile Menu Button */}
@@ -27,8 +30,7 @@ const Header = (): JSX.Element => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col items-center py-4 space-y-4 md:hidden">
-          <button onClick={() => { navigate("/overview"); setIsOpen(false); }} className="hover:text-gray-400">Overview</button>
+        <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col items-center py-4 space-y-4 md:hidden z-20">
           <button onClick={() => { navigate("/our-work"); setIsOpen(false); }} className="hover:text-gray-400">Our Work</button>
           <button onClick={() => { navigate("/contact"); setIsOpen(false); }} className="hover:text-gray-400">Contact</button>
           <Contact />
