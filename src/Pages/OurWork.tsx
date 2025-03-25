@@ -25,8 +25,8 @@ const OurWork = (): JSX.Element => {
         />
         <ProjectSection
           id="ravetown"
-          title="RaveTown - SocialFi Web3 Game on Core"
-          description="An engaging SocialFi game built on the Core platform, combining social interaction with Web3 elements."
+          title="RaveTown - SocialFi Web3 Game on Avalanche"
+          description="An engaging SocialFi game built on Unity, combining social interaction with Web3 elements."
           videoSrc="https://i.imgur.com/u2tL9z6.mp4"
           features={['Social interaction', 'In-game economy', 'Unique gameplay experiences']}
           community="Regular community events and engagement activities to build a strong player base."
