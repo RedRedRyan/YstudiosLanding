@@ -6,7 +6,7 @@ const About =():JSX.Element =>{
   <div className="max-w-7xl mx-auto">
     <h2 className="text-4xl font-extrabold text-center mb-8">Our Story – Ystudios</h2>
     <p className="text-lg text-gray-300 text-center mb-12">
-      Ystudios was born out of a dream of three desperate Undergrads who could see the world before their eyes asking them to reach and take it. Driven by the pure desire to be the new generation of dreamers who will revolutionalize the creative industries and leave a solid mark on the sillicon savannha.
+      Ystudios was born out of a dream of undergrads with a clear vision. Driven by the pure desire to be the new generation of dreamers who will revolutionalize the creative industries and leave a solid mark on the sillicon savannha.
     </p>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

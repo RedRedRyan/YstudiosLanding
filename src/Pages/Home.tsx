@@ -13,6 +13,7 @@ import "swiper/css/effect-fade";
 import teamImage1 from "/Jude.jpg";
 import teamImage2 from "/Ryan.jpg";
 import teamImage3 from "/Costo.jpg";
+import teamImage4 from "/Koiya.jpg";
 
 const Home = (): JSX.Element => {
   let navigate = useNavigate();
@@ -93,10 +94,13 @@ const Home = (): JSX.Element => {
               <span className="font-bold text-blue-500">Jude</span> - Fullstack Blockchain Developer.
             </p>
             <p className="text-lg mb-2">
-              <span className="font-bold text-blue-500">Ryan</span> - Game Developer.
+              <span className="font-bold text-blue-500">Ryan</span> - Game Developer, Pure Mathematician.
             </p>
-            <p className="text-lg">
-              <span className="font-bold text-blue-500">Costo</span> - Graphic Designer, 3D Modeler, and Animator.
+            <p className="text-lg mb-2">
+              <span className="font-bold text-blue-500">Costo</span> - 3D Modeler, and Animator.
+            </p>
+            <p className="text-lg mb-2">
+              <span className="font-bold text-blue-500">Koiya</span> - Graphic Designer, Audio & Visuals.
             </p>
           </motion.div>
 
@@ -125,6 +129,9 @@ const Home = (): JSX.Element => {
               <SwiperSlide>
                 <img src={teamImage3} alt="Team 3" className="w-full rounded-lg" />
                 
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={teamImage4} alt="Team 4" className="w-full rounded-lg" />
               </SwiperSlide>
             </Swiper>
           </motion.div>
